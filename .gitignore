@@ -1,0 +1,79 @@
+# .gitignore
+
+# ===================================================================
+# General & OS-specific
+# ===================================================================
+# macOS
+.DS_Store
+
+# ===================================================================
+# Editor & IDE specific
+# ===================================================================
+# Visual Studio Code
+.vscode/
+
+# JetBrains IDEs (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ===================================================================
+# Frontend (React / Node)
+# From /frontend/.gitignore, with paths adjusted for root
+# ===================================================================
+# Dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+# Testing
+/frontend/coverage
+
+# Production build
+/frontend/build
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===================================================================
+# Backend (Python / Poetry / FastAPI)
+# ===================================================================
+# Python virtual environment
+# Poetry creates its virtualenvs outside the project by default,
+# but this is good practice in case you configure it to be local.
+.venv
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+/backend/dist/
+/backend/build/
+*.egg-info/
+
+# Uploaded files from the application
+/backend/uploads/
+
+# ===================================================================
+# Environment Variables (IMPORTANT)
+# Keep all secret files out of the repository.
+# ===================================================================
+# Frontend .env files
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Backend .env file
+/backend/.env

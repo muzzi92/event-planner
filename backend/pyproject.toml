@@ -1,0 +1,30 @@
+
+[tool.poetry]
+name = "event-planner-backend"
+version = "0.1.0"
+description = "Backend for the Event Planner application"
+authors = ["Gemini"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.27.1"}
+sqlalchemy = "^2.0.28"
+pydantic = {extras = ["email"], version = "^2.6.4"}
+python-multipart = "^0.0.9"
+PyPDF2 = "^3.0.1"
+reportlab = "^4.0.4"
+
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+openai = "^1.99.9"
+python-dotenv = "^1.1.1"
+python-docx = "^1.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.4"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
